@@ -10,7 +10,7 @@
 }
 @font-face {
     font-family: Osw;
-    src: url(../fonts/Oswald-Regular.ttf);
+    src: url(../fonts/Oswal-Regular.woff);
 }
 a, button{
     transition: 0.4s;
