@@ -17,10 +17,9 @@ for (let smoothLink of smoothLinks) {
 
 const nav= document.getElementById('nav-icon2'),
       ul = document.querySelector('.drop');
-nav.addEventListener('click', () =>{
+      nav.addEventListener('click', () =>{
     nav.classList.toggle('open');
-    ul.classList.toggle('none');
-})
+    ul.classList.toggle('none');})
 
 // karusel
 var slideIndex = 0;

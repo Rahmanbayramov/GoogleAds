@@ -32,8 +32,8 @@ a, button{
 
 #nav-icon2 {
     margin-right: 3%;
-    width: 50px;
-    height: 40px;
+    width: 30px;
+    height: 25px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -44,14 +44,15 @@ a, button{
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+    
   }
   
   #nav-icon2 span {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 50%;
-    background: white;
+    background: #FFDF3C;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -80,12 +81,12 @@ a, button{
   
   #nav-icon2 span:nth-child(3),
   #nav-icon2 span:nth-child(4) {
-    top: 18px;
+    top: 12px;
   }
   
   #nav-icon2 span:nth-child(5),
   #nav-icon2 span:nth-child(6) {
-    top: 36px;
+    top: 24px;
   }
   
   #nav-icon2.open span:nth-child(1),
@@ -105,7 +106,7 @@ a, button{
   }
   
   #nav-icon2.open span:nth-child(1) {
-    left: 9px;
+    left: 5px;
     top: 7px;
   }
   
@@ -125,13 +126,13 @@ a, button{
   }
   
   #nav-icon2.open span:nth-child(5) {
-    left: 8px;
-    top: 22px;
+    left: 5px;
+    top: 17px;
   }
   
   #nav-icon2.open span:nth-child(6) {
     left: calc(50% - 1px);
-    top: 22px;
+    top: 16px;
   }
   
   .active {
@@ -150,7 +151,11 @@ a, button{
 
 
 
-
+.home_lock{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 
 /* end mobile */
@@ -802,12 +807,13 @@ footer img{
  .drop{
     background-color: #272727;
     border-bottom: 1px solid #eee;
-    transition: 0.5s ease } 
+    transition: 0.5s ease 
+} 
  .drop ul li{
-    margin: 4% 0;
+    margin: 7% 0;
  }
  
-  @media (max-width:393px) {
+ @media (min-width:320px) and (max-width:393px) {
     #nav-icon2{
         display: block;
     }
@@ -862,6 +868,7 @@ footer img{
     }
     .fourth{
         flex-direction: column;
+        margin: 4% 0;
     }
     .fourth_2 h4{
         margin-bottom: 3%;
@@ -883,6 +890,7 @@ footer img{
     .five_p{
         font-size: 15px;
         line-height: 1.7;
+        margin: 5% 0;
     }
     .right_img{
         display: none;
@@ -891,10 +899,10 @@ footer img{
         margin: 0;
     }
     .bottom{
-        padding: 25px;
+        padding: 20px;
     }
     .title{
-        font-size: 30px;
+        font-size: 25px;
         width: auto;
     }
     .noneInWeb{
@@ -912,6 +920,7 @@ footer img{
     footer a{
         cursor: pointer;
         transition: 0.4s;
+        font-size: 12px;
     }
     .btn_yellow{
         padding: 3.5% 14%;
@@ -925,7 +934,7 @@ footer img{
     }
   }
 
-  @media (max-width:425px) {
+  @media (min-width:393px) and (max-width:425px) {
     #nav-icon2{
         display: block;
     }
@@ -980,6 +989,7 @@ footer img{
     }
     .fourth{
         flex-direction: column;
+        margin: 4% 0;
     }
     .fourth_2 h4{
         margin-bottom: 3%;
@@ -1001,6 +1011,7 @@ footer img{
     .five_p{
         font-size: 15px;
         line-height: 1.7;
+        margin: 5% 0;
     }
     .right_img{
         display: none;
@@ -1009,10 +1020,10 @@ footer img{
         margin: 0;
     }
     .bottom{
-        padding: 25px;
+        padding: 20px;
     }
     .title{
-        font-size: 30px;
+        font-size: 25px;
         width: auto;
     }
     .noneInWeb{
@@ -1030,6 +1041,7 @@ footer img{
     footer a{
         cursor: pointer;
         transition: 0.4s;
+        font-size: 12px;
     }
     .btn_yellow{
         padding: 3.5% 14%;
@@ -1043,7 +1055,127 @@ footer img{
     }
   }
 
-  @media (max-width:768px) {
+ @media (min-width:425px) and (max-width:768px){
+    #nav-icon2{
+        display: block;
+    }
+    .mobileKill{
+        display: none;
+    }
+    .otzyv{
+        display: none;
+    }
+    .collage{
+        flex-direction: column-reverse;
+    }
+    .right{
+        padding: 0 5%;
+    }
+    .title_svg{
+        display: none;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    form button{
+        margin: 5% 0;
+    }
+    .second h2, .third h3{
+        font-size: 25px;
+        padding: 0 2%;
+    }
+    .l_bl{
+        margin: 4%;
+        padding: 5%;
+        min-height: 150px;
+    }
+    .second_main{
+        flex-direction: column;
+    }
+    .third_collage{
+        flex-direction: column;
+        background-color: antiquewhite;
+    }
+    .th1{
+        min-height: fit-content;
+        padding: 2% 3%;
+        margin: 0 2% 4%;
+    }
+    .th1 img{
+        width: auto;
+    }
+    .th1 p{
+        font-size: 16px;
+    }
+    .fourth{
+        flex-direction: column;
+        margin: 4% 0;
+    }
+    .fourth_2 h4{
+        margin-bottom: 3%;
+        width: auto;
+        font-size: 17px;
+    }
+    .five{
+        flex-direction: column;
+    }
+    .five_right{
+        display: none;
+    }
+    .five_left p:first-child{
+        font-size: 25px;
+    }
+    .yellow_big{
+        font-size: 25px;
+    }
+    .five_p{
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 5% 0;
+    }
+    .right_img{
+        display: none;
+    }
+    .five_bot{
+        margin: 0;
+    }
+    .bottom{
+        padding: 20px;
+    }
+    .title{
+        font-size: 25px;
+        width: auto;
+    }
+    .noneInWeb{
+        display: block;
+    }
+    .slideshow-container{
+        padding: 5% 4%;
+    }
+    .seven_title{
+        font-size: 20px;
+    }
+    footer img{
+        width: 25%;
+    }
+    footer a{
+        cursor: pointer;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    .btn_yellow{
+        padding: 3.5% 14%;
+        font-weight: 700;
+    }
+    form input, form button {
+        padding: 4%;
+    }
+    form button{
+        display: flex;
+    }
+  }
+  @media (min-width:768px) and (max-width:1024px) {
     #nav-icon2{
         display: block;
     }
@@ -1166,7 +1298,7 @@ footer img{
     form button{
         display: flex;
     }
-  }
+  } 
 
 
 
