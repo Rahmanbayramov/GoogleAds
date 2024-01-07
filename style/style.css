@@ -671,7 +671,10 @@ position: absolute;
   .mySlides {
       display: none;
   }
-  
+  .mySlides img{
+    width: 100% !important;
+
+  }
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
