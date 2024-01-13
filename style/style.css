@@ -169,29 +169,39 @@ header{
     background-color: #272727;
     display: flex;
     justify-content: space-between;
-    padding: 2% 3%;
+    padding: 0% 5%;
     align-items: center;
     border-bottom: 1px solid white;
     /* position: sticky; */
 }
 header a img{
-    width: 100px;
+    width: 45%;
 }
 header ul{
     display: flex;
     justify-content: center;
 }
 header ul li {
-    padding:0 20px;
+    padding:0 50px;
     letter-spacing: 1px;
     font-size: 14px;
 }
 
-header button{
+.reg{
     padding: 1% 2%;
     background-color: transparent;
     border: 2px solid #FFDF3C;
     border-radius: 10px;
+}
+.reg_img{
+    width: 30%;
+}
+.port{
+    padding: 4% 0;
+    background-image: url(../img/hero-bg.png);
+    /* padding: 2% 5% 2% 0; */
+    background-color: #272727;
+
 }
 
 /* main */
@@ -209,11 +219,11 @@ main{
 }
 
 .hero{
-    width:100%;
+    width:60%;
 }
 .otzyv{
     position: absolute;
-    left: 7%;
+    left: 5%;
     bottom: 50%;
     width: 184px;
     height: 103px;
@@ -281,7 +291,7 @@ main{
 
 }
 form input, form button{
-    padding: 20px 50px;
+    padding: 20px 40px;
     border-radius: 10px;
     border: none;
 }
@@ -291,7 +301,7 @@ color: black;
 }
 form button{
     background-color: black;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     font-weight: 700;
 }
 .btn_yellow{
@@ -313,12 +323,20 @@ form button{
 
 }
 .btn_dark{
-    background: #000 url(../img/btn-icon-light.svg) 90% center/20px no-repeat;
+    background-color: #000;
+    /* background: #000 url(../img/btn-icon-light.svg) 90% center/20px no-repeat; */
+    border-radius: 5px;
+    padding: 4% 2%;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
 }
 
 .btn_dark:hover {
-    background: #fff url(../img/btn-icon-dark.svg) 90% center/20px no-repeat;
-
+    background: #FFDF3C;
+    color: #000;
+    border: 1px solid #717171;
+box-shadow: 2px 5px 5px #717171;
+font-size: 16px;
 
 }
 
@@ -497,7 +515,7 @@ border: 1px solid #eee;
     font-size: 16px;
 }
 .five_right{
-background-image: url(../img/photo.png);
+background-image: url(../img/r.PNG);
 position: absolute;
     right: 5%;
     height: 100%;
@@ -773,7 +791,7 @@ position: absolute;
 footer{
     background-color: #272727;
     border-top: 0.5px solid white;
-    padding: 2% 3%;
+    padding: 0% 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -781,7 +799,7 @@ footer{
 }
 
 footer img{
-    width: 10%;
+    width: 12%;
 
 }
 .footer_main, .footer_left{
@@ -802,7 +820,38 @@ footer img{
 .footer_right img{
     margin-right: 5%;
 }
+/* foto */
 
+.gallery {
+    position: relative; display: flex; flex-flow: row wrap;
+    justify-content: space-evenly; align-items: center;
+    height: 100%; width: 90%; margin: 0 auto;
+    padding: 0 0 1%;
+  }
+  .gallery img {
+    height: auto; max-width: 350px; margin: 10px;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 6px #919191;
+    transition: .5s linear; cursor: pointer;
+  }
+  .show img { opacity: .25; pointer-events: none; }
+  .active {
+    transition: box-shadow .5s linear .5s, top 1s ease-out, left 1s ease-out, transform 1s ease-out, width 1s ease-in, height 1s ease-in;
+    box-shadow: 0 0 0 10px #fff; filter: drop-shadow(1px 2px 6px #000);
+    pointer-events: none;
+  }
+  .close {
+    position: relative; left: 100%;
+    height: 20px; width: 20px;
+    transform: translate(0%, -100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff, 0 0 2px 2px #000;
+    font: bold 20px/20px Arial; text-align: center;
+    background-color: #000; color: #fff;
+    pointer-events: auto; cursor: pointer;
+    transition: 1s linear; opacity: 0;
+  }
+  /* .active .close:hover { transform: translate(0%, -100%) rotate(.5turn); transition: 1s ease; } */
+/* foto end */
 
 /* prosto */
 .gorayda{
@@ -822,7 +871,13 @@ footer img{
  .drop ul li{
     margin: 10% 0;
  }
-
+.reg_header{
+    background-color: #272727;
+    justify-content: center;
+}
+.reg_header img{
+    width: 25%;
+}
  
  @media (min-width:320px) and (max-width:393px) {
     #nav-icon2{
@@ -943,9 +998,15 @@ footer img{
     form button{
         display: flex;
     }
+    .gallery img {
+        height: auto; width: 40%; margin: 10px;
+      }
   }
 
   @media (min-width:393px) and (max-width:425px) {
+    .gallery img {
+        height: auto; width: 40%; margin: 10px;
+      }
     #nav-icon2{
         display: block;
     }
@@ -1067,6 +1128,9 @@ footer img{
   }
 
  @media (min-width:425px) and (max-width:768px){
+    .gallery img {
+        height: auto; width: 40%; margin: 10px;
+      }
     #nav-icon2{
         display: block;
     }
@@ -1187,6 +1251,9 @@ footer img{
     }
   }
   @media (min-width:768px) and (max-width:1024px) {
+    .gallery img {
+        height: auto; width: 40%; margin: 10px;
+      }
     #nav-icon2{
         display: block;
     }
