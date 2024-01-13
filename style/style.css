@@ -906,7 +906,7 @@ footer img{
     transition: 0.5s ease 
 } 
  .drop ul li{
-    margin: 10% 0;
+    margin: 5% 0;
  }
 .reg_header{
     background-color: #272727;
@@ -919,8 +919,13 @@ footer img{
     background-color: #fff;
     min-width: 20% ;
 }
+.reg_img{
+    width: 20%;
+}
  @media (min-width:320px) and (max-width:393px) {
-
+    .reg_img{
+        width: 100%;
+    }
 .photoGallery a img{
     width: 94%;
     background-color: transparent;
@@ -1076,6 +1081,9 @@ footer img{
   }
 
   @media (min-width:393px) and (max-width:425px) {
+    .reg_img{
+        width: 100%;
+    }
     .photoGallery a img{
         width: 95%;
         background-color: transparent;
@@ -1232,6 +1240,9 @@ footer img{
   }
 
  @media (min-width:425px) and (max-width:768px){
+    .reg_img{
+        width: 100%;
+    }
     .photoGallery a img{
         width: 95%;
         background-color: transparent;
