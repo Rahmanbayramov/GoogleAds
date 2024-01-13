@@ -878,7 +878,14 @@ footer img{
 .reg_header img{
     width: 25%;
 }
- 
+.photoGallery{
+    background-color: #fff;
+    min-width: 20% ;
+}
+/* .footer_reg{
+    flex: 0 0 auto;
+
+} */
  @media (min-width:320px) and (max-width:393px) {
     #nav-icon2{
         display: block;
