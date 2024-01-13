@@ -62,7 +62,7 @@ oGallery.addEventListener('click', function(ev) {
   oBig.addEventListener('click', function(ev) {
     ev.stopPropagation();
     this.addEventListener('transitionend', function() { this.remove(); });
-    this.style.transition = `.5s ease-in`;
+    this.style.transition = `.3s ease-in`;
     this.style.height = this.style.width = `0px`;
   oGallery.classList.toggle('show', false);
   });
