@@ -938,10 +938,12 @@ footer img{
     }
     .five_bot{
         margin: 0;
+        width: 100% !important;
     }
     .bottom{
         padding: 20px;
         width: 94%;
+        margin-bottom: 0;
     }
     .title{
         font-size: 25px;
@@ -1109,9 +1111,13 @@ footer img{
     }
     .five_bot{
         margin: 0;
+        width: 100% !important
     }
     .bottom{
         padding: 20px;
+        width: 94%;
+        margin-bottom: 0;
+
     }
     .title{
         font-size: 25px;
@@ -1275,9 +1281,12 @@ footer img{
     }
     .five_bot{
         margin: 0;
+        width: 100% !important
     }
     .bottom{
         padding: 20px;
+        width: 94%;
+        margin-bottom: 0;
     }
     .title{
         font-size: 25px;
