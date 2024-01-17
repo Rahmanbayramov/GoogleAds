@@ -468,7 +468,7 @@ border: 1px solid #eee;
 
 }
 .th1 img{
-    height: 100%;
+    height: auto;
     background: center/contain no-repeat;
     width: 350px;
 
