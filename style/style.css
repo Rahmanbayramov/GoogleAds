@@ -813,6 +813,11 @@ footer img{
     width: 20%;
 }
  @media (min-width:320px) and (max-width:393px) {
+    .left_ph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     main{
         padding: 0;
     }
@@ -974,6 +979,11 @@ footer img{
   }
 
   @media (min-width:393px) and (max-width:425px) {
+    .left_ph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     main{
         padding: 0;
     }
@@ -1136,6 +1146,11 @@ footer img{
   }
 
  @media (min-width:425px) and (max-width:768px){
+    .left_ph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     main{
         padding: 0;
     }
